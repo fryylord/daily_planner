@@ -1,9 +1,8 @@
-$(document).ready(function () {
-    let now = moment().format("MMMM Do YYYY");
+    let NowMoment = moment().format("MMMM Do YYYY");
     let displayDate = document.getElementById("currentDay");
-    displayDate.innerHTML = now;
+    displayDate.innerHTML = NowMoment;
     let currentHour = moment().format("HH");
-  
+
     $(".time-div").each(function () {
       var timeDiv = $(this).attr("id").split("-")[1];
       
@@ -26,14 +25,12 @@ $(document).ready(function () {
       localStorage.setItem(time, value);
     });
   
-    //retrieves items from local storage and sets them in proper places
-    $("#nineAM .time-block").val(localStorage.getItem("09"));
-    $("#tenAM .time-block").val(localStorage.getItem("10"));
-    $("#elevenAM .time-block").val(localStorage.getItem("11"));
-    $("#twelvePM .time-block").val(localStorage.getItem("12"));
-    $("#onePM .time-block").val(localStorage.getItem("1"));
-    $("#twoPM .time-block").val(localStorage.getItem("2"));
-    $("#threePM .time-block").val(localStorage.getItem("3"));
-    $("#fourPM .time-block").val(localStorage.getItem("4"));
-    $("#fivePM .time-block").val(localStorage.getItem("5"));
-  });
+    $("#hour-09 .time-block").val(localStorage.getItem("09"));
+    $("#hour-10 .time-block").val(localStorage.getItem("10"));
+    $("#hour-11 .time-block").val(localStorage.getItem("11"));
+    $("#hour-12 .time-block").val(localStorage.getItem("12"));
+    $("#hour-13 .time-block").val(localStorage.getItem("13"));
+    $("#hour-14 .time-block").val(localStorage.getItem("14"));
+    $("#hour-15 .time-block").val(localStorage.getItem("15"));
+    $("#hour-16 .time-block").val(localStorage.getItem("16"));
+    $("#hour-17 .time-block").val(localStorage.getItem("17"));
