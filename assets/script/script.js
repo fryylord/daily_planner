@@ -4,17 +4,17 @@
     let currentTime = moment().format("HH");
 
     $(".time-div").each(function () {
-      var timeDiv = $(this).attr("id").split("-")[1];
+      var rowTime = $(this).attr("id").split("-")[1];
       
-      if (currentTime == timeDiv) {
+      if (currentTime == rowTime) {
         $(this).addClass("present");
-      } else if (currentTime < timeDiv) {
-        $(this).removeClass("present");
-        $(this).addClass("future");
-      } else if (currentTime > timeDiv) {
+      } else if (currentTime > rowTime) {
         $(this).removeClass("future");
         $(this).addClass("past");
-      }
+      } else if (currentTime < rowTime) {
+        $(this).removeClass("present");
+        $(this).addClass("future");
+      } 
     });
   
     $(".saveBtn").click(function (event) {
