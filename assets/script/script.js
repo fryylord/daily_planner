@@ -1,8 +1,5 @@
     var timeDisplayEl = $('#time-display');
     
-    // let now = moment().format("MMMM Do YYYY");
-    // let date = document.getElementById("currentDay");
-    // date.innerHTML = now;
     let currentTime = moment().format("HH");
 
     $(".time-div").each(function () {
@@ -20,7 +17,7 @@
     });
   
     function displayTime() {
-      var rightNow = moment().format('MMM DD, YYYY [at] hh:mm:ss a');
+      var rightNow = moment().format('hh:mm:ss a [on] MMM DD, YYYY ');
       timeDisplayEl.text(rightNow);
     }
     
