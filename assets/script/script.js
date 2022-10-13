@@ -1,6 +1,8 @@
-    let now = moment().format("MMMM Do YYYY");
-    let date = document.getElementById("currentDay");
-    date.innerHTML = now;
+    var timeDisplayEl = $('#time-display');
+    
+    // let now = moment().format("MMMM Do YYYY");
+    // let date = document.getElementById("currentDay");
+    // date.innerHTML = now;
     let currentTime = moment().format("HH");
 
     $(".time-div").each(function () {
@@ -17,6 +19,12 @@
       } 
     });
   
+    function displayTime() {
+      var rightNow = moment().format('MMM DD, YYYY [at] hh:mm:ss a');
+      timeDisplayEl.text(rightNow);
+    }
+    
+    
     $(".saveBtn").click(function (event) {
       event.preventDefault();
       var value = $(this).siblings(".time-block").val();
@@ -33,3 +41,5 @@
     $("#hour-15 .time-block").val(localStorage.getItem("15"));
     $("#hour-16 .time-block").val(localStorage.getItem("16"));
     $("#hour-17 .time-block").val(localStorage.getItem("17"));
+
+    setInterval(displayTime, 1000);
