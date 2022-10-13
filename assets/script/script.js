@@ -1,17 +1,17 @@
-    let NowMoment = moment().format("MMMM Do YYYY");
-    let displayDate = document.getElementById("currentDay");
-    displayDate.innerHTML = NowMoment;
-    let currentHour = moment().format("HH");
+    let now = moment().format("MMMM Do YYYY");
+    let date = document.getElementById("currentDay");
+    date.innerHTML = now;
+    let currentTime = moment().format("HH");
 
     $(".time-div").each(function () {
       var timeDiv = $(this).attr("id").split("-")[1];
       
-      if (currentHour == timeDiv) {
+      if (currentTime == timeDiv) {
         $(this).addClass("present");
-      } else if (currentHour < timeDiv) {
+      } else if (currentTime < timeDiv) {
         $(this).removeClass("present");
         $(this).addClass("future");
-      } else if (currentHour > timeDiv) {
+      } else if (currentTime > timeDiv) {
         $(this).removeClass("future");
         $(this).addClass("past");
       }
