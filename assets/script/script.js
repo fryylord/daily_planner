@@ -45,4 +45,3 @@ $("#hour-14 .saveMe").val(localStorage.getItem("14"));
 $("#hour-15 .saveMe").val(localStorage.getItem("15"));
 $("#hour-16 .saveMe").val(localStorage.getItem("16"));
 $("#hour-17 .saveMe").val(localStorage.getItem("17"));
-
