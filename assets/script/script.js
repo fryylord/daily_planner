@@ -8,7 +8,7 @@ function displayTime() {
 
 function isActive() {
   var currentHour = moment().hour();
-  $(".time-div").each(function () {
+  $(".scheduleItem").each(function () {
     var scheduleHour = $(this).attr("id").split("-")[1];
     if (scheduleHour < currentHour) {
       $(this).addClass("past");
