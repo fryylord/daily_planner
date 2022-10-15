@@ -10,7 +10,6 @@ function isActive() {
   var currentHour = moment().hour();
   $(".time-div").each(function () {
     var scheduleHour = $(this).attr("id").split("-")[1];
-    console.log( scheduleHour, currentHour)
     if (scheduleHour < currentHour) {
       $(this).addClass("past");
       $(this).removeClass("future");
