@@ -23,12 +23,12 @@ To allow the user to save hourly tasks throughout the day, and recall them in th
 
 ## Credits
 
-https://ku.bootcampcontent.com/ku-coding-boot-camp/KU-VIRT-FSF-PT-09-2022-U-LOLC/
-https://codepen.io/judebloom/pen/RwGbVWB
-https://brettsevy.github.io/hwPlanner/
-https://www.james-fisher-web-developer.com/pages/workday-scheduler.html
-https://github.com/Jay-Idrees/Work-Day-Scheduler--JQUERY-Bootstrap
-https://github.com/sylviaprabudy/work-day-scheduler
+https://ku.bootcampcontent.com/ku-coding-boot-camp/KU-VIRT-FSF-PT-09-2022-U-LOLC/   
+https://codepen.io/judebloom/pen/RwGbVWB   
+https://brettsevy.github.io/hwPlanner/   
+https://www.james-fisher-web-developer.com/pages/workday-scheduler.html   
+https://github.com/Jay-Idrees/Work-Day-Scheduler--JQUERY-Bootstrap   
+https://github.com/sylviaprabudy/work-day-scheduler   
 
 ## License
  
@@ -56,10 +56,10 @@ SOFTWARE.
 
 ## Features
 
-Simple user interface
-Adaptive for use on varying devices
-Local storage utilized for recalling previous user input
-Clock displaying current time in header 
+Simple user interface   
+Adaptive for use on varying devices   
+Local storage utilized for recalling previous user input   
+Clock displaying current time in header   
 
 ## Tests
 
