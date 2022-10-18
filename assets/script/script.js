@@ -9,7 +9,7 @@ function displayTime() {
 function isActive() {
   var currentHour = moment().hour();
   $(".scheduleItem").each(function () {
-    var scheduleHour = $(this).attr("id").split("_")[1];
+    var scheduleHour = $(this).attr("id");
     if (scheduleHour < currentHour) {
       $(this).addClass("past");
       $(this).removeClass("future");
@@ -32,16 +32,16 @@ function isActive() {
 $(".saveBtn").click(function (event) {
   event.preventDefault();
   var value = $(this).siblings(".saveMe").val();
-  var time = $(this).parent().attr("id").split("_")[1];
+  var time = $(this).parent().attr("id");
   localStorage.setItem(time, value);
 });
   
-$("#hour_09 .saveMe").val(localStorage.getItem("09"));
-$("#hour_10 .saveMe").val(localStorage.getItem("10"));
-$("#hour_11 .saveMe").val(localStorage.getItem("11"));
-$("#hour_12 .saveMe").val(localStorage.getItem("12"));
-$("#hour_13 .saveMe").val(localStorage.getItem("13"));
-$("#hour_14 .saveMe").val(localStorage.getItem("14"));
-$("#hour_15 .saveMe").val(localStorage.getItem("15"));
-$("#hour_16 .saveMe").val(localStorage.getItem("16"));
-$("#hour_17 .saveMe").val(localStorage.getItem("17"));
+$("#09 .saveMe").val(localStorage.getItem("09"));
+$("#10 .saveMe").val(localStorage.getItem("10"));
+$("#11 .saveMe").val(localStorage.getItem("11"));
+$("#12 .saveMe").val(localStorage.getItem("12"));
+$("#13 .saveMe").val(localStorage.getItem("13"));
+$("#14 .saveMe").val(localStorage.getItem("14"));
+$("#15 .saveMe").val(localStorage.getItem("15"));
+$("#16 .saveMe").val(localStorage.getItem("16"));
+$("#17 .saveMe").val(localStorage.getItem("17"));
